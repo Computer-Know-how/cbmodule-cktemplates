@@ -1,0 +1,12 @@
+/* CKEditor basic styles */
+@import url('/modules/contentbox-admin/includes/ckeditor/contents.css');
+
+/* Custom inclusions (@import url('/modules/contentbox/layouts/...');) */
+@import url('/modules/contentbox/layouts/bootswatch/includes/css/bootstrap/swatches/default/bootstrap.min.css');
+@import url('/modules/contentbox/layouts/bootswatch//includes/css/font-awesome/font-awesome.min.css');
+@import url('/modules/contentbox/layouts/bootswatch/includes/css/main.css');
+
+/* Manual overwrites */
+body {
+	width: 940px;
+}
