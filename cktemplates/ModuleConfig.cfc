@@ -15,7 +15,7 @@ component {
 	this.author 			= "Computer Know How, LLC";
 	this.webURL 			= "http://www.compknowhow.com";
 	this.description 		= "Adds template support to CKEditor 4 in ContentBox";
-	this.version			= "1.0";
+	this.version			= "1.1";
 	// If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
 	this.viewParentLookup 	= true;
 	// If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa

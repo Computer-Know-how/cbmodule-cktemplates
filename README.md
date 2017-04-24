@@ -30,3 +30,4 @@ After installation the configuration locations are as follows...
 Change Log
 -----------------
 * Version 1.0 - Initial Release
+* Version 1.1 - Updated for ContentBox 3
