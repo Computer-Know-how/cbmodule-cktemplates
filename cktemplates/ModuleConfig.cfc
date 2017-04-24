@@ -115,10 +115,10 @@ component {
 		}
 
 		// Install the ckeditor plugin
-		var ckeditorPluginsPath = controller.getSetting("modules")["contentbox-admin"].path & "/includes/ckeditor/plugins/templates";
+		var ckeditorPluginsPath = controller.getSetting("modules")["contentbox-admin"].path & "/modules/contentbox-ckeditor/includes/ckeditor/plugins/templates";
 		var fileUtils = controller.getWireBox().getInstance("fileUtils@cktemplates");
 		var pluginPath = controller.getSetting("modules")["CKTemplates"].path & "/includes/templates";
-		fileUtils.directoryCopy(source=pluginPath, destination=ckeditorPluginsPath);
+		directoryCopy(pluginPath, ckeditorPluginsPath, true);
 	}
 
 	/**
@@ -142,7 +142,7 @@ component {
 			settingService.delete( setting );
 		}
 		// Uninstall the ckeditor plugin
-		var ckeditorPluginsPath = controller.getSetting("modules")["contentbox-admin"].path & "/includes/ckeditor/plugins/templates";
+		var ckeditorPluginsPath = controller.getSetting("modules")["contentbox-admin"].path & "/modules/contentbox-ckeditor/includes/ckeditor/plugins/templates";
 		var fileUtils = controller.getWireBox().getInstance("fileUtils@cktemplates");
 		fileUtils.directoryRemove(path=ckeditorPluginsPath, recurse=true);
 	}
