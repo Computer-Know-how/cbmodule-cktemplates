@@ -1,6 +1,3 @@
-/* CKEditor basic styles */
-@import url('/modules/contentbox-admin/modules/contentbox-ckeditor/includes/ckeditor/contents.css');
-
 /* Custom inclusions (@import url('/modules/contentbox/themes/...');) */
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 

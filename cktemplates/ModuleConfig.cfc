@@ -72,14 +72,9 @@ component {
 	/**
 	* CKEditor Config Integration
 	*/
-	function cbadmin_ckeditorExtraConfig(event, interceptData){
-		var settingService = controller.getWireBox().getInstance("SettingService@cb");
-		var args = {name="cbox-cktemplates"};
-		var allSettings = deserializeJSON( settingService.findWhere(criteria=args).getValue() );
-
-		var contentsCSSPath = #event.getModuleRoot('CKTemplates')# & "/includes/custom.css?v=1";
-
-		arguments.interceptData.extraConfig &= "contentsCss : '" & contentsCSSPath & "'";
+	function cbadmin_ckeditorContentsCss(event, interceptData){
+		var contentsCSSPath = event.getModuleRoot('CKTemplates') & "/includes/custom.css?v=1";
+		arrayAppend(arguments.interceptData.contentsCss, contentsCSSPath);
 	}
 
 	/**
